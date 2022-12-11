@@ -1,4 +1,4 @@
-<h1> to get the project up and runing<h1>
+<h1> to get the project up and runing</h1>
 <ul>
     <li>Install xampp on your system</li>
     <li>install composer on your system</li>
