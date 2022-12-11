@@ -4,8 +4,22 @@
     <li>install composer on your system</li>
     <li>install gitbash on your system</li>
     <li>clone the repository by copying the command below and running it on your command line</li>
-    <!-- <pre> -->
+    <pre>
         <code>git clone https://github.com/okoye-peter/genika_project.git</code>
-    <!-- </pre> -->
-
+    </pre>
+    <li>cd into the project and run the command to install all needed package</li>
+    <pre>
+        <code>composer install</code>
+    </pre>
+    <li>create your database</li>
+    <li>duplicate .env.example and rename the duplicate to .env</li>
+    <li>add you database credentials to .env file</li>
+    <li>run the command to generate application key</li>
+    <pre>
+        <code>php artisan key:gen</code>
+    </pre>
+    <li>run the command to migrate your table</li>
+    <pre>
+        <code>php artisan migrate</code>
+    </pre>
 </ul>
