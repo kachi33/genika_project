@@ -11,6 +11,9 @@
     <pre>
         <code>composer install</code>
     </pre>
+    <pre>
+        <code>npm install && npm run dev</code>
+    </pre>
     <li>create your database</li>
     <li>duplicate .env.example and rename the duplicate to .env</li>
     <li>add you database credentials to .env file</li>
@@ -21,5 +24,9 @@
     <li>run the command to migrate your table</li>
     <pre>
         <code>php artisan migrate</code>
+    </pre>
+    <li>run the command to start the server</li>
+    <pre>
+        <code>php artisan serve</code>
     </pre>
 </ul>
