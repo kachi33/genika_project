@@ -277,12 +277,13 @@ class CourseController extends Controller
         return view('view_schedule', compact('course', 'schedule'));
     }
 
-    public function getCourseQuiz(Course $course)
+    public function getCourseQuiz(Request $request, Course $course)
     {
         $user = auth()->user();
         if ($user->user_type == 'Student') {
             $results = $user->results->where('course_id', $course->id)->pluck('quiz_date');
             $questions = $course->questions->whereNotIn('created_at', $results->all())->whereNull('closed_at');
+            // dd($questions);
             $dates = collect($questions->pluck('created_at'))->unique();
         } else {
             $questions = $course->questions;

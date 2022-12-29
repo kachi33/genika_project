@@ -22,6 +22,7 @@ class User extends Authenticatable
         'email',
         'phone',
         'password',
+        'user_type'
     ];
 
     protected $appends = ['avatar'];

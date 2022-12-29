@@ -15,6 +15,6 @@ class Quiz extends Model
     }
     public function getClosedAtAttribute($value)
     {
-        return Carbon::parse($value)->format('Y-m-d');
+        return $value ? Carbon::parse($value)->format('Y-m-d') : NULL;
     }
 }

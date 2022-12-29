@@ -57,7 +57,7 @@
 		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- JQuery Lib -->
-	<script type="text/javascript" src="http://classrooom.test/lib/jquery/jquery3.4.1.min.js"></script>
+	<script type="text/javascript" src="{{ asset('lib/jquery/jquery3.4.1.min.js') }}"></script>
 	<!-- Bootstrap Lib -->
 	<link href="https://fonts.googleapis.com/css?family=Exo 2" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -73,8 +73,8 @@
 	<script type="text/javascript"
 		src="http://coderoj.com/style/lib/editarea_0_8_2/edit_area/edit_area_full.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Exo 2" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="http://classrooom.test/css/home.css">
-	<script type="text/javascript" src="http://classrooom.test/js/home/home.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
+	<script type="text/javascript" src="{{ asset('js/home/home.js') }}"></script>
 	<style type="text/css">
 		body {
 			background: #ffffff;
@@ -102,7 +102,7 @@
                         <span class="doubleTxtBlue titleTxt">Room</span>
                     </div>
                 </a>
-					<img style="width: 90%" src="http://classrooom.test/img/site/studying.svg">
+					<img style="width: 90%" src="{{ asset('img/site/studying.svg') }}">
 				</div>
 			</div>
 			<div class="col-md-4">
